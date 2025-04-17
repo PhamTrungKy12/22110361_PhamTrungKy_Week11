@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "507421220611",
+    "project_id": "trungky-7d49a",
+    "storage_bucket": "trungky-7d49a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507421220611:android:12e0d94189a9cac40f5336",
+        "android_client_info": {
+          "package_name": "com.example.videoshortwithfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP50N0K6hyCkUNzJTRj_btWKjiem2ntTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
