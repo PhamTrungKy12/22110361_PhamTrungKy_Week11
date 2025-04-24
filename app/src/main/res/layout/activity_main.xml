@@ -11,10 +11,6 @@
         android:id="@+id/vpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottom0f="parent"
-        app:layout_constraintLeft_toLeft0f="parent"
-        app:layout_constraintRight_toRight0f="parent"
-        app:layout_constraintTop_toTop0f="parent" />
+        android:orientation="vertical" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

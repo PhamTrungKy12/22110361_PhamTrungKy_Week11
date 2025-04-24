@@ -1,7 +1,9 @@
 package com.example.videoshortwithfirebase;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,11 +32,12 @@ public class VideosFireBaseAdapter extends FirebaseRecyclerAdapter<Video1Model, 
         private ProgressBar videoProgressBar;
         private TextView textVideoTitle;
         private TextView textVideoDescription;
+        private ImageView btnback;
         private ImageView imPerson, favorites, imShare, imMore;
 
         public MyHolder(@NonNull View itemView) {
             super(itemView);
-
+            btnback = itemView.findViewById(R.id.btnback);
             videoView = itemView.findViewById(R.id.videoView);
             videoProgressBar = itemView.findViewById(R.id.videoProgressBar);
             textVideoTitle = itemView.findViewById(R.id.textVideoTitle);
@@ -57,6 +60,7 @@ public class VideosFireBaseAdapter extends FirebaseRecyclerAdapter<Video1Model, 
         //Video1Model videoModel = videoList.get(position);
         holder.textVideoTitle.setText(model.getTitle());
         holder.textVideoDescription.setText(model.getDesc());
+        Log.d("TAG", "onBindViewHolder: " + model.getDesc());
         //holder.videoView.setVideoPath(videoModel.getUrl());
         holder.videoView.setVideoURI(Uri.parse(model.getUrl()));
 
@@ -97,6 +101,16 @@ public class VideosFireBaseAdapter extends FirebaseRecyclerAdapter<Video1Model, 
                     holder.favorites.setImageResource(R.drawable.favorite_24dp);
                     isFav = false;
                 }
+            }
+        });
+
+        holder.btnback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                holder.videoView.stopPlayback();
+                holder.videoView.pause();
+                Intent intent = new Intent(view.getContext(), BeginActivity.class);
+                view.getContext().startActivity(intent);
             }
         });
     }
