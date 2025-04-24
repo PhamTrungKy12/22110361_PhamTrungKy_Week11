@@ -60,7 +60,6 @@ public class VideosFireBaseAdapter extends FirebaseRecyclerAdapter<Video1Model, 
         //Video1Model videoModel = videoList.get(position);
         holder.textVideoTitle.setText(model.getTitle());
         holder.textVideoDescription.setText(model.getDesc());
-        Log.d("TAG", "onBindViewHolder: " + model.getDesc());
         //holder.videoView.setVideoPath(videoModel.getUrl());
         holder.videoView.setVideoURI(Uri.parse(model.getUrl()));
 

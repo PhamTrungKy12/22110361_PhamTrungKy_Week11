@@ -13,6 +13,7 @@ firebase-bom = "31.2.3"
 firebase-firestore = "24.4.5"
 firebase-storage = "20.1.0"
 firebase-ui-database = "8.0.1"
+cloudinary = "2.3.1"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -30,6 +31,7 @@ firebasedatabasektx = {group = "com.google.firebase", name = "firebase-database-
 firebasefilestore = {group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebase-firestore"}
 firebasestaorage = {group = "com.google.firebase", name = "firebase-storage", version.ref = "firebase-storage"}
 firebaseuidatabase = {group = "com.firebaseui", name = "firebase-ui-database", version.ref = "firebase-ui-database"}
+cloudinary = {group = "com.cloudinary", name = "cloudinary-android", version.ref = "cloudinary"}
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 

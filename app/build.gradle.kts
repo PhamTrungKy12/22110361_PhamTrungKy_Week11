@@ -47,6 +47,7 @@ dependencies {
     implementation(libs.firebasestaorage)
     implementation(libs.firebaseuidatabase)
     testImplementation(libs.junit)
+    implementation(libs.cloudinary)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
